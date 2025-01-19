@@ -1,128 +1,102 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Produk</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-image: url('https://files.catbox.moe/mued9x.jpg'); 
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-    
-    h1 {
-      color: #FFFFFF; 
-      text-align: center;
-      padding-top: 20px;
-    }
-    
-    .produk-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 50px;
-    }
-    
-    .produk {
-      border: 1px solid #3B3F4E;
-      padding: 20px;
-      text-align: center;
-      width: calc(25% - 20px);
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    
-    .foto {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-    }
-    
-    .nama-produk {
-      font-weight: bold;
-      margin-top: 10px;
-      color: #FFFFFF;
-    }
-    
-    .deskripsi {
-      margin-top: 5px;
-      color: #FFFFFF;
-    }
-    
-    .button {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    
-    .button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Game HAXZ Official</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px 0;
+        }
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .top-up-form {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .btn {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Daftar Produk</h1>
-  <div class="produk-container">
-    <!-- Produk 1 -->
-    <div class="produk">
-      <img class="foto" src="https://files.catbox.moe/6m7ff8.jpg" alt="Produk 1">
-      <div class="nama-produk">PANEL PTERODACTYL</div>
-      <div class="deskripsi">Otomatis</div>
-      <a href="https://wa.wizard.id/4eab61" target="_blank" class="button">Lihat Detail</a>
+    <header>
+        <div class="logo">HAXZ</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div>OFFICIAL</div>
+    </header>
+    <div class="container">
+        <h1>Top Up Game Haxz Official</h1>
+        <p>Top up untuk berbagai game seperti Free Fire, Mobile Legends, PUBG, dan lainnya.</p>
+        <div class="top-up-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="game">Pilih Game</label>
+                <select id="game" name="game" required>
+                    <option value="ff">Free Fire</option>
+                    <option value="ml">Mobile Legends</option>
+                    <option value="pubg">PUBG</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Top Up Amount</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <button class="btn" type="submit">Top Up Now</button>
+        </div>
     </div>
-    
-    <!-- Produk 2 -->
-    <div class="produk">
-      <img class="foto" src="https://files.catbox.moe/6m7ff8.jpg" alt="Produk 2">
-      <div class="nama-produk">RESELLER PANEL</div>
-      <div class="deskripsi">Otomatis</div>
-      <a href="https://wa.wizard.id/0350f6" target="_blank" class="button">Lihat Detail</a>
-    </div>
-    
-    <!-- Produk 3 -->
-    <div class="produk">
-      <img class="foto" src="https://files.catbox.moe/6m7ff8.jpg" alt="Produk 3">
-      <div class="nama-produk">ADMIN PANEL PTERODACTYL</div>
-      <div class="deskripsi">Otomatis</div>
-      <a href="https://wa.wizard.id/02ba41" target="_blank" class="button">Lihat Detail</a>
-    </div>
-    
-    <!-- Produk 4 -->
-    <div class="produk">
-      <img class="foto" src="https://files.catbox.moe/z44ger.jpg" alt="Produk 4">
-      <div class="nama-produk">SUNTIK SOSMED</div>
-      <div class="deskripsi">Otomatis</div>
-      <a href="https://wa.wizard.id/325b6b" target="_blank" class="button">Lihat Detail</a>
-    </div>
-    
-        <!-- Produk 5 -->
-    <div class="produk">
-      <img class="foto" src="https://files.catbox.moe/98prg1.jpg" alt="Produk 5">
-      <div class="nama-produk">SEWA BOT WHATAPP</div>
-      <div class="deskripsi">Otomatis</div>
-      <a href="https://wa.wizard.id/3928de" target="_blank" class="button">Lihat Detail</a>
-    </div>
-    
-    <!-- Produk 6 -->
-    <div class="produk">
-      <img class="foto" src="https://files.catbox.moe/wtdd22.jpg" alt="Produk 6">
-      <div class="nama-produk">SCRIPT BOT WHATAPP</div>
-      <div class="deskripsi">Otomatis</div>
-      <a href="https://wa.wizard.id/b7fba9" target="_blank" class="button">Lihat Detail</a>
-    </div>
-  </div>
 </body>
 </html>
